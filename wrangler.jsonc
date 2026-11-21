@@ -1,0 +1,15 @@
+{
+  // Tên này PHẢI giống hệt tên Worker trên Cloudflare (của con là "cetm")
+  "name": "cetm",
+  "main": "worker.js",
+  "compatibility_date": "2026-11-01",
+  "assets": { "directory": "./public", "binding": "ASSETS" },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "views",
+      // Dán "Database ID" của D1 vào chỗ DAN-ID-VAO-DAY (giữ nguyên dấu ngoặc kép)
+      "database_id": "DAN-ID-VAO-DAY"
+    }
+  ]
+}
